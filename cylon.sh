@@ -4,13 +4,13 @@ do
     for i in {0..3}
     do
         gpio write $i 1
-        sleep 0.25
+        sleep 0.25s
         gpio write $i 0
     done
     for j in 2 1
     do
         gpio write $j 1
-        sleep 0.25
+        sleep 0.25s
         gpio write $j 0
     done
 done
